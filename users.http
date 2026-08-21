@@ -1,0 +1,24 @@
+GET http://localhost:3000/api/users
+
+###
+POST http://localhost:3000/api/users
+Content-Type: application/json
+
+{
+    "name": "",
+    "email": ""
+}
+###
+
+
+PUT http://localhost:3000/api/users/1
+Content-Type: application/json
+
+{
+    "name": "diego souza",
+    "email": "ds@upf.br"
+}
+
+###
+
+DELETE http://localhost:3000/api/users/1
