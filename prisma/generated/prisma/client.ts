@@ -49,8 +49,3 @@ export type User = Prisma.UserModel
  * 
  */
 export type Profile = Prisma.ProfileModel
-/**
- * Model Plan
- * 
- */
-export type Plan = Prisma.PlanModel

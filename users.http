@@ -5,20 +5,19 @@ POST http://localhost:3000/api/users
 Content-Type: application/json
 
 {
-    "name": "",
-    "email": ""
+    "name": "teste da silva",
+    "email": "teste@teste.com",
+    "passwordHash": "abc123"
 }
+
 ###
-
-
 PUT http://localhost:3000/api/users/1
 Content-Type: application/json
 
 {
-    "name": "diego souza",
-    "email": "ds@upf.br"
+    "name": "usuario alterado",
+    "email": "outroemail@upf.br"
 }
 
 ###
-
 DELETE http://localhost:3000/api/users/1

@@ -6,9 +6,9 @@ import { UpdateProfileDto } from 'src/dtos/update-profile-dto';
 @Injectable()
 export class ProfilesService {
 
-    constructor(private prisma: PrismaService) {
-
-    }
+    constructor(
+        private prisma: PrismaService
+    ) { }
 
     async create(dto: CreateProfileDto) {
         const user = await this.prisma.user.findUnique({ where: { id: dto.userId } });
@@ -58,4 +58,6 @@ export class ProfilesService {
             avatarUrl: p.avatarUrl ?? '',
         };
     }
+
+
 }
